@@ -1,4 +1,4 @@
-# Sensor Fusion Self-Driving Car Course
+# Sensor Fusion Self-Driving Car
 
 <img src="media/ObstacleDetectionFPS.gif" width="700" height="400" />
 
