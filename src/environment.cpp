@@ -47,11 +47,12 @@ void simpleHighway(pcl::visualization::PCLVisualizer::Ptr& viewer)
     
     // TODO:: Create lidar sensor
     Lidar* lidar_obj = new Lidar(cars, 0); 
-
-    // TODO:: Create point processor
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud = lidar_obj->scan();
     // renderRays(viewer, lidar_obj->position, cloud);
     renderPointCloud(viewer, cloud, "Some String");
+
+    // TODO:: Create point processor
+    ProcessPointClouds<pcl::PointXYZ> processPoints;
 }
 
 
