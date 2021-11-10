@@ -43,6 +43,7 @@ public:
     void savePcd(typename pcl::PointCloud<PointT>::Ptr cloud, std::string file);
 
     typename pcl::PointCloud<PointT>::Ptr loadPcd(std::string file);
+    typename pcl::PointCloud<PointT>::Ptr loadPcdBlob(std::string file);
 
     std::vector<boost::filesystem::path> streamPcd(std::string dataPath);
   

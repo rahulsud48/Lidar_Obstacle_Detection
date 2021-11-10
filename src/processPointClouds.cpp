@@ -162,6 +162,22 @@ typename pcl::PointCloud<PointT>::Ptr ProcessPointClouds<PointT>::loadPcd(std::s
 
 
 template<typename PointT>
+typename pcl::PointCloud<PointT>::Ptr ProcessPointClouds<PointT>::loadPcdBlob(std::string file)
+{
+
+    pcl::PCLPointCloud2::Ptr cloud_blob (new pcl::PCLPointCloud2);
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+    pcl::PCDReader reader;
+    reader.read (file, *cloud_blob);
+
+    pcl::fromPCLPointCloud2 (*cloud_blob, *cloud);
+    std::cerr << "Loaded " << cloud->points.size () << " data points from "+file << std::endl;
+
+    return cloud;
+}
+
+
+template<typename PointT>
 std::vector<boost::filesystem::path> ProcessPointClouds<PointT>::streamPcd(std::string dataPath)
 {
 
