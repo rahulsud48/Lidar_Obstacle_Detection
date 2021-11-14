@@ -18,6 +18,7 @@
 #include <ctime>
 #include <chrono>
 #include "render/box.h"
+#include <unordered_set>
 
 template<typename PointT>
 class ProcessPointClouds {
@@ -46,6 +47,12 @@ public:
     typename pcl::PointCloud<PointT>::Ptr loadPcdBlob(std::string file);
 
     std::vector<boost::filesystem::path> streamPcd(std::string dataPath);
+
+    void crossProduct(std::vector<float>& v_A, std::vector<float>& v_B, std::vector<float>& v3);
+    // std::vector<float> crossProduct_(std::vector<float> v_A, std::vector<float> v_B);
+    std::unordered_set<int> Ransac(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceTol);
+    std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SegmentPlane_local(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceThreshold);
+    
   
 };
 #endif /* PROCESSPOINTCLOUDS_H_ */
