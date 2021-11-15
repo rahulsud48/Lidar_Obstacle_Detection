@@ -54,5 +54,6 @@ public:
     std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SegmentPlane_local(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceThreshold);
     
   
+  
 };
 #endif /* PROCESSPOINTCLOUDS_H_ */
