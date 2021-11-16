@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster.cpp
+/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster_prac.cpp
 ../../render/render.h
 /home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.h
 ../../render/box.h
@@ -17,10 +17,14 @@ string
 -
 kdtree.h
 /home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/kdtree.h
+iostream
+-
 
 /home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/kdtree.h
 ../../render/render.h
 /home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.h
+iostream
+-
 
 /home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/box.h
 Eigen/Geometry

@@ -57,28 +57,28 @@ include CMakeFiles/quizCluster.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/quizCluster.dir/flags.make
 
-CMakeFiles/quizCluster.dir/cluster.cpp.o: CMakeFiles/quizCluster.dir/flags.make
-CMakeFiles/quizCluster.dir/cluster.cpp.o: ../cluster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/quizCluster.dir/cluster.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quizCluster.dir/cluster.cpp.o -c "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster.cpp"
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.o: CMakeFiles/quizCluster.dir/flags.make
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.o: ../cluster_prac.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/quizCluster.dir/cluster_prac.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quizCluster.dir/cluster_prac.cpp.o -c "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster_prac.cpp"
 
-CMakeFiles/quizCluster.dir/cluster.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quizCluster.dir/cluster.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster.cpp" > CMakeFiles/quizCluster.dir/cluster.cpp.i
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quizCluster.dir/cluster_prac.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster_prac.cpp" > CMakeFiles/quizCluster.dir/cluster_prac.cpp.i
 
-CMakeFiles/quizCluster.dir/cluster.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quizCluster.dir/cluster.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster.cpp" -o CMakeFiles/quizCluster.dir/cluster.cpp.s
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quizCluster.dir/cluster_prac.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rahul/Desktop/Computer Vision/SensorFusion/Lidar_Obstacle_Detection/src/quiz/cluster/cluster_prac.cpp" -o CMakeFiles/quizCluster.dir/cluster_prac.cpp.s
 
-CMakeFiles/quizCluster.dir/cluster.cpp.o.requires:
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.requires:
 
-.PHONY : CMakeFiles/quizCluster.dir/cluster.cpp.o.requires
+.PHONY : CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.requires
 
-CMakeFiles/quizCluster.dir/cluster.cpp.o.provides: CMakeFiles/quizCluster.dir/cluster.cpp.o.requires
-	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster.cpp.o.provides.build
-.PHONY : CMakeFiles/quizCluster.dir/cluster.cpp.o.provides
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.provides: CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.requires
+	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.provides.build
+.PHONY : CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.provides
 
-CMakeFiles/quizCluster.dir/cluster.cpp.o.provides.build: CMakeFiles/quizCluster.dir/cluster.cpp.o
+CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.provides.build: CMakeFiles/quizCluster.dir/cluster_prac.cpp.o
 
 
 CMakeFiles/quizCluster.dir/home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.cpp.o: CMakeFiles/quizCluster.dir/flags.make
@@ -107,13 +107,13 @@ CMakeFiles/quizCluster.dir/home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar
 
 # Object files for target quizCluster
 quizCluster_OBJECTS = \
-"CMakeFiles/quizCluster.dir/cluster.cpp.o" \
+"CMakeFiles/quizCluster.dir/cluster_prac.cpp.o" \
 "CMakeFiles/quizCluster.dir/home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.cpp.o"
 
 # External object files for target quizCluster
 quizCluster_EXTERNAL_OBJECTS =
 
-quizCluster: CMakeFiles/quizCluster.dir/cluster.cpp.o
+quizCluster: CMakeFiles/quizCluster.dir/cluster_prac.cpp.o
 quizCluster: CMakeFiles/quizCluster.dir/home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.cpp.o
 quizCluster: CMakeFiles/quizCluster.dir/build.make
 quizCluster: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -398,7 +398,7 @@ CMakeFiles/quizCluster.dir/build: quizCluster
 
 .PHONY : CMakeFiles/quizCluster.dir/build
 
-CMakeFiles/quizCluster.dir/requires: CMakeFiles/quizCluster.dir/cluster.cpp.o.requires
+CMakeFiles/quizCluster.dir/requires: CMakeFiles/quizCluster.dir/cluster_prac.cpp.o.requires
 CMakeFiles/quizCluster.dir/requires: CMakeFiles/quizCluster.dir/home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.cpp.o.requires
 
 .PHONY : CMakeFiles/quizCluster.dir/requires

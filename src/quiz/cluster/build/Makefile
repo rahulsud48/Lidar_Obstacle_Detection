@@ -123,32 +123,32 @@ quizCluster/fast:
 	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/build
 .PHONY : quizCluster/fast
 
-cluster.o: cluster.cpp.o
+cluster_prac.o: cluster_prac.cpp.o
 
-.PHONY : cluster.o
+.PHONY : cluster_prac.o
 
 # target to build an object file
-cluster.cpp.o:
-	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster.cpp.o
-.PHONY : cluster.cpp.o
+cluster_prac.cpp.o:
+	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster_prac.cpp.o
+.PHONY : cluster_prac.cpp.o
 
-cluster.i: cluster.cpp.i
+cluster_prac.i: cluster_prac.cpp.i
 
-.PHONY : cluster.i
+.PHONY : cluster_prac.i
 
 # target to preprocess a source file
-cluster.cpp.i:
-	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster.cpp.i
-.PHONY : cluster.cpp.i
+cluster_prac.cpp.i:
+	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster_prac.cpp.i
+.PHONY : cluster_prac.cpp.i
 
-cluster.s: cluster.cpp.s
+cluster_prac.s: cluster_prac.cpp.s
 
-.PHONY : cluster.s
+.PHONY : cluster_prac.s
 
 # target to generate assembly for a file
-cluster.cpp.s:
-	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster.cpp.s
-.PHONY : cluster.cpp.s
+cluster_prac.cpp.s:
+	$(MAKE) -f CMakeFiles/quizCluster.dir/build.make CMakeFiles/quizCluster.dir/cluster_prac.cpp.s
+.PHONY : cluster_prac.cpp.s
 
 home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.o: home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... quizCluster"
 	@echo "... edit_cache"
-	@echo "... cluster.o"
-	@echo "... cluster.i"
-	@echo "... cluster.s"
+	@echo "... cluster_prac.o"
+	@echo "... cluster_prac.i"
+	@echo "... cluster_prac.s"
 	@echo "... home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.o"
 	@echo "... home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.i"
 	@echo "... home/rahul/Desktop/Computer_Vision/SensorFusion/Lidar_Obstacle_Detection/src/render/render.s"
