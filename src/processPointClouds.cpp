@@ -282,7 +282,7 @@ std::unordered_set<int> ProcessPointClouds<PointT>::Ransac(typename pcl::PointCl
 		// Randomly pick 2 points
 
 		std::unordered_set<int> inliers;
-		while (inliers.size() < 3){
+		while (inliers.size() < 4){
 			inliers.insert(rand()%(cloud->points.size()));
 		}
 

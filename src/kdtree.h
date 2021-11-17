@@ -128,7 +128,7 @@ struct KdTree
 			}
 
 			// recursive iterate
-			int di = depth % 2;
+			int di = depth % 3;
 			if (target[di] - distanceTol  < node->point[di])
 				searchRecursive(target, node->left, depth+1, distanceTol, ids);
 			if (target[di] + distanceTol  > node->point[di])
