@@ -12,6 +12,7 @@
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/segmentation/extract_clusters.h>
 #include <pcl/common/transforms.h>
+#include "kdtree.h"
 #include <iostream> 
 #include <string>  
 #include <vector>
@@ -53,6 +54,10 @@ public:
     std::unordered_set<int> Ransac(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceTol);
     std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SegmentPlane_local(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceThreshold);
     
+    // pcl::PointXYZXI CreateData(std::vector<float> point);
+    void ClusterRecursive(const std::vector<std::vector<float>>& points, KdTree* tree, float distanceTol, int curr_index, std::vector<bool>& processed, std::vector<int>& cluster);
+    std::vector<std::vector<int>> euclideanCluster(const std::vector<std::vector<float>>& points, KdTree* tree, float distanceTol);
+    std::vector<typename pcl::PointCloud<PointT>::Ptr> Clustering_local(typename pcl::PointCloud<PointT>::Ptr cloud, float clusterTolerance, int minSize, int maxSize);
   
   
 };
