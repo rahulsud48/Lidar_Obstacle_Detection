@@ -452,6 +452,12 @@ std::vector<typename pcl::PointCloud<PointT>::Ptr> ProcessPointClouds<PointT>::C
     for (int i=0; i<points_cloud.size(); i++){
     	tree_->insert(points_cloud[i],i); 
     }
+
+    // for (int i=0; i<cloud->points.size(); i++){
+    //     std::vector<float> v{point.x, point.y, point.z}
+    // 	tree_->insert(v,i); 
+    // }
+
     std::vector<std::vector<int>> clusters = euclideanCluster(points_cloud, tree_, clusterTolerance);
 
     std::vector<typename pcl::PointCloud<PointT>::Ptr> clusters_all;
